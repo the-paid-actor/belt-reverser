@@ -1,11 +1,11 @@
 {
-  "name": "belt-reverser",
+  "name": "belt-reverser2",
   "version": "2.0.0",
   "factorio_version": "2.0",
-  "title": "Belt Reverser",
+  "title": "Belt Reverser 2",
   "author": "The_Paid_Actor",
   "contact": "",
-  "homepage": "https://github.com/the-paid-actor/belt-reverser",
+  "homepage": "https://github.com/the-paid-actor/belt-reverser2",
   "description": "Reverse entire segments of belt",
   "dependencies": ["base >= 2.0.7"],
   "license": "MIT"
