@@ -11,17 +11,15 @@ function M.flipBeltLines(beltEntity)
     M.replaceBeltLane(laneOne,contentsTwo)
 end
 
--- Original code by Articulating, modifications by Cogito
 function M.replaceBeltLane(lane, contents)
     lane.clear()
     local currentPosition = 0
-    for name, count in pairs(contents) do
-        for _ = 1, count do
-            lane.insert_at(currentPosition, {name=name, count=1})
+    for idx, item in ipairs(contents) do
+        for _ = 1, item.count do
+            lane.insert_at(currentPosition, {name=item.name, count=1})
             currentPosition = currentPosition + 0.03125 * 9
         end
     end
-
 end
 
 function M.copyBeltLines(belt)
